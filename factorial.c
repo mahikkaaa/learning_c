@@ -37,3 +37,21 @@ main()
 **/
 
 
+/**
+MODIFICATION
+#include<stdio.h>
+main()
+{
+  long  num,i,fact=1;
+
+    for(num=1;num<=10;num++)
+    {
+       for(i=1;i<=num;i++)
+       {
+        fact=fact*i;
+       }
+       printf("\nFactorial of %d is %d",num,fact);
+       fact=1;
+    }
+}
+**/
