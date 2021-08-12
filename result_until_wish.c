@@ -10,7 +10,7 @@ main()
 
  while(wish=='y')
  {
-  system("cls");
+  system("cls");  //to clear the previous input data
   printf("\n\nenter Rollnumber  ");
   scanf("%d",&rollno);
   fflush(stdin);
