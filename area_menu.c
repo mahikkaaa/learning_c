@@ -89,3 +89,57 @@ main()
 }
 }
 **/
+
+
+
+
+/**
+MODIFICATION 
+//do-while loop using menu
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+main()
+{ int choice;
+  float l,b,area,peri,diagonal;
+
+  do
+   {
+
+    printf("\n Rectangle Menu");
+    printf("\n1. Area");
+    printf("\n2. Perimeter");
+    printf("\n3. Diagonal");
+    printf("\n4.Exit");
+
+    printf("\n Enter your choice ");
+    scanf("%d",&choice);
+
+   if(choice==1||choice==2||choice==3)
+   {
+    printf("Enter length ");
+    scanf("%f",&l);
+    printf("Enter breadth ");
+    scanf("%f",&b);
+   }
+       switch(choice)
+     {
+
+       case 1: area=l*b;
+               printf("\n Area is %f ",area);
+               break;
+       case 2: peri=2*(l+b);
+               printf("\n Perimeter is %f ",peri);
+               break;
+
+       case 3:diagonal=sqrt((l*l)+(b*b));
+              printf("\n Diagonal is %f ",diagonal);
+              break;
+       case 4: exit(0);        //terminate the program
+
+       default :printf("\n Invalid choice ");
+     }
+     }while(choice !=4);
+   }
+
+**/
