@@ -55,3 +55,31 @@ main()
     }
 }
 **/
+
+
+
+/**
+FACTORIAL WITH RECURSION 
+
+#include<stdio.h>
+main()
+{ int num,f;
+  int factorial(int n);
+  printf("Enter number ");
+  scanf("%d",&num);
+  f=factorial(num);
+  printf("Factorial is %d",f);
+}
+int factorial(int n)
+{
+     if(n==1)
+       return 1;
+     else if (n==0)
+        return 0;
+     else
+     {
+        return(n*factorial(n-1));
+     }
+}
+
+**/
